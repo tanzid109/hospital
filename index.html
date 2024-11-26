@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="bumblebee">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Hospital</title>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header class="bg-white shadow-md">
+        <div class=" mx-auto flex justify-between items-center py-4 px-6 ">
+            <div class="flex items-center space-x-2">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <span class="text-blue-500 text-2xl font-bold">New.</span>
+                    <span class="text-gray-500 font-light text-sm">Central Hospital</span>
+                </div>
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="flex space-x-6 font-bold text-gray-700">
+                <a href="index.html" class="hover:text-blue-500 ">Home</a>
+                <a href="#" class="hover:text-blue-500 ">About</a>
+                <a href="DoctorLogin.html" class="hover:text-blue-500 ">Doctor's Login</a>
+                <a href="PatientLogin.html" class="hover:text-blue-500 ">Patient's Login</a>
+                <a href="Form.html" class="hover:text-blue-500 ">Form</a>
+            </nav>
+
+            <!-- Appointment Button -->
+            <a href="#" class="btn btn-outline bg-blue-400 p-2 rounded-lg text-xl font-extrabold">Appointment</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gray-100">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-6 py-12">
+            <!-- Text Section -->
+            <div>
+                <h1 class="text-4xl font-bold text-gray-800 leading-tight">
+                    We Take Care Of Your <br /> Healthy Health
+                </h1>
+                <p class="text-gray-600 text-xl mt-4">
+                    Caring for Life, Every Day. <br>
+                    Your Health, Our Priority.<br>
+                    Compassionate Care, Advanced Medicine.<br>
+                    Trusted Care for Every Generation.<br>
+                    Where Healing Begins.<br>
+                    Excellence in Care, Close to Home.<br>
+                </p>
+                <a href="#" class="btn btn-primary mt-6 text-blue-500">Read More</a>
+            </div>
+
+            <!-- Image Section -->
+            <div>
+                <!-- Replace `your-image-path.jpg` with your actual image path -->
+                <img src="assets/bg.jpg" alt="Doctors discussing" class="rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Include DaisyUI Plugin -->
+    <script>
+        tailwind.config = {
+            plugins: [require("daisyui")],
+        };
+    </script>
+</body>
+
+</html>
